@@ -214,6 +214,8 @@ def main():
     while True:
         try:
             #compute initial guesses for the baselines, intrinsics
+            cameraList[0].geometry.projection().setParameters(np.array([640,480,430,430]))
+            cameraList[0].geometry.projection().distortion().setParameters(np.array([0,0,0,0]))
             print("initializing initial guesses")
             if len(cameraList)>1:
                 baseline_guesses = graph.getInitialGuesses(cameraList)
