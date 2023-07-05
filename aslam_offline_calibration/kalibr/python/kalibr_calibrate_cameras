@@ -404,10 +404,10 @@ def main():
             kcc.printParameters(calibrator)
             print("")
             
-            if parsed.verbose and len(calibrator.baselines)>1:
-                f=pl.figure(100006)
-                kcc.plotCameraRig(calibrator.baselines, fno=f.number, clearFigure=False)
-                pl.show()
+            # if parsed.verbose and len(calibrator.baselines)>1:
+            #     f=pl.figure(100006)
+            #     kcc.plotCameraRig(calibrator.baselines, fno=f.number, clearFigure=False)
+            #     pl.show()
             
             #write to file
             bagtag = os.path.splitext(parsed.bagfile)[0]
