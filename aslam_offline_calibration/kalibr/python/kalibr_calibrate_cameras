@@ -254,7 +254,7 @@ def main():
             optimizerOptions.verbose = parsed.verbose
             verbose = parsed.verbose
         
-            doPlot = parsed.plot
+            doPlot = False
             if doPlot:
                 sm.logWarn("Plotting during calibration. Things may be very slow (but you might learn something).")
 
